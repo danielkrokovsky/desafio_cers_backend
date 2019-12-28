@@ -1,4 +1,4 @@
-package com.mural;
+package com.mural.service;
 
 import java.util.ArrayList;
 import java.util.List;

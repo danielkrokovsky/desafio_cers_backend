@@ -28,7 +28,9 @@ public class Mural implements Serializable{
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id", nullable = false, precision = 0)
 	private Long id;
+	
 	private String title;
+	
 	private String description;
 	
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
@@ -36,5 +38,8 @@ public class Mural implements Serializable{
 	
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
 	private LocalDate visualization;
+	
+	
+	private Boolean status;
 	
 }
