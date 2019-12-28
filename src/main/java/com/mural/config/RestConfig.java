@@ -1,4 +1,4 @@
-package com.mural.mural.config;
+package com.mural.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

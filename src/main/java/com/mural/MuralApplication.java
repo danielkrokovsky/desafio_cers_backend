@@ -1,4 +1,4 @@
-package com.mural.mural;
+package com.mural;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
