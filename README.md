@@ -7,5 +7,3 @@ e altere a linha 15 <blockquote>spring.jpa.hibernate.ddl-auto=create</blockquote
 
 e descomente a linha 17 <p><blockquote> spring.datasource.initialization-mode=embedded </blockquote>
 
-e descomente a linha 17 <p><blockquote> spring.datasource.initialization-mode=embedded </blockquote>
-
