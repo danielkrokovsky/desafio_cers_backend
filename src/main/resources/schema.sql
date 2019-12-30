@@ -1,5 +1,9 @@
 DROP TABLE IF EXISTS "MURAL";
 
+DROP SEQUENCE IF EXISTS hibernate_sequence;
+
+create sequence hibernate_sequence start with 1 increment by 1;
+
 CREATE TABLE "MURAL" (
   ID SERIAL PRIMARY KEY,
   DESCRIPTION TEXT default NULL,
