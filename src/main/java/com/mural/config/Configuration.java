@@ -19,6 +19,7 @@ import org.springframework.web.filter.CorsFilter;
 
 import lombok.AllArgsConstructor;
 
+@SuppressWarnings("deprecation")
 @Component
 @AllArgsConstructor
 public class Configuration extends RepositoryRestConfigurerAdapter {

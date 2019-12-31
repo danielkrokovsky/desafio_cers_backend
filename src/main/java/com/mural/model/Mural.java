@@ -11,11 +11,9 @@ import javax.persistence.Id;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 @Entity
 public class Mural implements Serializable{
 	
@@ -29,8 +27,10 @@ public class Mural implements Serializable{
 	@Column(name = "id", nullable = false, precision = 0)
 	private Long id;
 	
+	@Column(name = "title")
 	private String title;
 	
+	@Column(name = "description")
 	private String description;
 	
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
@@ -39,7 +39,7 @@ public class Mural implements Serializable{
 	@DateTimeFormat(pattern = "dd.MM.yyyy")
 	private LocalDate visualization;
 	
-	
+	@Column(name = "status")
 	private Boolean status;
 	
 }
