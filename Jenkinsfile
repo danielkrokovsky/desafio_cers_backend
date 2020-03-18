@@ -9,7 +9,7 @@ pipeline {
           }
         }
 
-        stage('error') {
+        stage('log') {
           steps {
             echo 'Publish SonarQube'
           }
@@ -17,7 +17,7 @@ pipeline {
 
         stage('Sonar') {
           steps {
-            sh 'mvn sonar:sonar -Dsonar.host.url=http:172.20.0.3:9000'
+            sh 'mvn sonar:sonar -Dsonar.host.url=http://172.20.0.3:9000'
           }
         }
 
