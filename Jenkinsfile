@@ -9,9 +9,15 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
-            echo 'Pblish SonarQube'
+            echo 'Publish SonarQube'
+          }
+        }
+
+        stage('Sonar') {
+          steps {
+            sh 'mvn sonar:sonar -Dsonar.host.url=http:172.20.0.3:9000'
           }
         }
 
