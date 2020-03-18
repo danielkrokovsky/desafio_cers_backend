@@ -2,8 +2,19 @@ pipeline {
   agent any
   stages {
     stage('build') {
-      steps {
-        sh 'mvn clean install'
+      parallel {
+        stage('build') {
+          steps {
+            sh 'mvn clean install'
+          }
+        }
+
+        stage('') {
+          steps {
+            echo 'Pblish SonarQube'
+          }
+        }
+
       }
     }
 
